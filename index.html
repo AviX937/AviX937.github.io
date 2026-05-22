@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Персональный сайт-портфолио — визитка и примеры работ.">
+  <title>Ваше Имя / Your Name — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo" data-i18n="logo">ИмяФамилия</a>
+      <nav class="nav">
+        <a href="#about" data-i18n="nav.about">Обо мне</a>
+        <a href="#portfolio" data-i18n="nav.portfolio">Портфолио</a>
+        <a href="#services" data-i18n="nav.services">Услуги</a>
+        <a href="#contact" data-i18n="nav.contact">Контакты</a>
+        <a href="assets/resume_ru.pdf" download class="resume-link" data-i18n="nav.resume">Резюме</a>
+      </nav>
+      <button id="lang-toggle" class="lang-btn" aria-label="Switch language">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Секция: Главный экран -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h1 data-i18n="hero.title">Ваше Имя</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Кто вы и чем занимаетесь коротко.</p>
+        <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer" class="cta" data-i18n="hero.cta">Написать в Telegram</a>
+      </div>
+    </section>
+
+    <!-- Секция: Обо мне -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 data-i18n="about.heading">Обо мне</h2>
+        <div class="about__grid">
+          <div class="about__text" data-i18n="about.text">
+            Здесь несколько абзацев о себе: опыт, принципы работы, образование. Без терминов, понятно широкой аудитории.
+          </div>
+          <!-- Опционально: фото -->
+          <!-- <img src="assets/photo.jpg" alt="Фото" class="about__photo"> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция: Портфолио -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <h2 data-i18n="portfolio.heading">Портфолио</h2>
+        <div id="portfolio-grid" class="portfolio__grid">
+          <!-- Рендерится из data/portfolio.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция: Услуги -->
+    <section id="services" class="services section">
+      <div class="container">
+        <h2 data-i18n="services.heading">Услуги</h2>
+        <div class="services__grid">
+          <div class="service-card">
+            <h3 data-i18n="services.item1.title">Услуга 1</h3>
+            <p data-i18n="services.item1.desc">Описание услуги 1. Коротко и ясно.</p>
+          </div>
+          <div class="service-card">
+            <h3 data-i18n="services.item2.title">Услуга 2</h3>
+            <p data-i18n="services.item2.desc">Описание услуги 2.</p>
+          </div>
+          <div class="service-card">
+            <h3 data-i18n="services.item3.title">Услуга 3</h3>
+            <p data-i18n="services.item3.desc">Описание услуги 3.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция: Контакты -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 data-i18n="contact.heading">Контакты</h2>
+        <div class="contact__links">
+          <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer" class="contact-link tg" data-i18n="contact.tg">Telegram: @yourusername</a>
+          <a href="mailto:mail@example.com" class="contact-link email">mail@example.com</a>
+          <!-- Дополнительные соцсети при необходимости -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Имя Фамилия</p>
+    </div>
+  </footer>
+
+  <!-- Данные и скрипты -->
+  <script src="js/i18n.js"></script>
+  <script src="data/portfolio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
