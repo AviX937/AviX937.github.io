@@ -58,23 +58,60 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 64px;
+  gap: 16px;
 }
 
 .logo {
   font-weight: 700;
   font-size: 1.3rem;
   letter-spacing: -0.01em;
+  flex-shrink: 0;
 }
 
-.nav {
+/* Контейнер для ссылок, появляющихся в хедере */
+.header-nav {
   display: flex;
   gap: 28px;
+  justify-content: center;
   font-size: 0.95rem;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.4s ease, opacity 0.4s ease;
 }
 
-.nav a.active {
+.header-nav.visible {
+  max-width: 500px;   /* достаточно для трёх ссылок */
+  opacity: 1;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.header-nav a:hover {
+  color: #555;
+}
+
+.header-nav a.active {
   font-weight: 600;
   border-bottom: 2px solid #1a1a1a;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.resume-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
 }
 
 .lang-btn {
@@ -118,14 +155,11 @@ a {
   opacity: 0.85;
 }
 
-/* Оглавление */
+/* Оглавление (ToC) */
 .toc {
   background: #f5f5f5;
   border-bottom: 1px solid #e0e0e0;
   padding: 12px 0;
-  position: sticky;
-  top: 64px;
-  z-index: 99;
 }
 
 .toc ul {
@@ -260,13 +294,20 @@ a {
     padding: 12px 0;
   }
 
-  .nav {
+  .header-nav {
     order: 3;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 8px;
-    gap: 8px;
-    font-size: 0.8rem;
+    gap: 12px;
+  }
+
+  .header-nav.visible {
+    max-width: 100%;
+  }
+
+  .header-actions {
+    gap: 12px;
   }
 
   .about__grid {

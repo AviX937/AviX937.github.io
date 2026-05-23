@@ -11,16 +11,18 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body class="font-mono">
-  <header class="header">
+  <header class="header" id="header">
     <div class="container header__inner">
       <a href="{{ '/' | relative_url }}" class="logo" data-i18n="logo">ИмяФамилия</a>
-      <nav class="nav">
+      <div class="header-nav" id="header-nav">
         <a href="{{ '/#about' | relative_url }}" data-i18n="nav.about">Обо мне</a>
         <a href="{{ '/#portfolio' | relative_url }}" data-i18n="nav.portfolio">Портфолио</a>
         <a href="{{ '/#contact' | relative_url }}" data-i18n="nav.contact">Контакты</a>
+      </div>
+      <div class="header-actions">
         <a href="{{ '/assets/resume_ru.pdf' | relative_url }}" download class="resume-link" data-i18n="nav.resume">Резюме</a>
-      </nav>
-      <button id="lang-toggle" class="lang-btn" aria-label="Switch language">EN</button>
+        <button id="lang-toggle" class="lang-btn" aria-label="Switch language">EN</button>
+      </div>
     </div>
   </header>
 
