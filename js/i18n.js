@@ -4,27 +4,22 @@ const i18n = {
     nav: {
       about: "Обо мне",
       portfolio: "Портфолио",
-      services: "Услуги",
       contact: "Контакты",
       resume: "Резюме"
     },
     hero: {
       title: "Ваше Имя",
-      subtitle: "Кто вы и чем занимаетесь коротко.",
+      subtitle: "Коротко о роде занятий.",
       cta: "Написать в Telegram"
     },
     about: {
       heading: "Обо мне",
-      text: "Здесь несколько абзацев о себе: опыт, принципы работы, образование. Без терминов, понятно широкой аудитории."
+      text: "Рассказ о себе. Абзацы разделяются символом новой строки в i18n объекте.\n\nВторая строка."
     },
     portfolio: {
-      heading: "Портфолио"
-    },
-    services: {
-      heading: "Услуги",
-      item1: { title: "Услуга 1", desc: "Описание услуги 1. Коротко и ясно." },
-      item2: { title: "Услуга 2", desc: "Описание услуги 2." },
-      item3: { title: "Услуга 3", desc: "Описание услуги 3." }
+      heading: "Портфолио",
+      design: "Дизайн",
+      translations: "Переводы"
     },
     contact: {
       heading: "Контакты",
@@ -36,7 +31,6 @@ const i18n = {
     nav: {
       about: "About",
       portfolio: "Portfolio",
-      services: "Services",
       contact: "Contact",
       resume: "Resume"
     },
@@ -47,16 +41,12 @@ const i18n = {
     },
     about: {
       heading: "About",
-      text: "A few paragraphs about yourself: experience, principles, education. Plain language for a broad audience."
+      text: "Tell about yourself. Paragraphs separated by newline.\n\nSecond paragraph."
     },
     portfolio: {
-      heading: "Portfolio"
-    },
-    services: {
-      heading: "Services",
-      item1: { title: "Service 1", desc: "Description of service 1." },
-      item2: { title: "Service 2", desc: "Description of service 2." },
-      item3: { title: "Service 3", desc: "Description of service 3." }
+      heading: "Portfolio",
+      design: "Design",
+      translations: "Translations"
     },
     contact: {
       heading: "Contact",

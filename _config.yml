@@ -1,0 +1,15 @@
+title: "Портфолио"
+description: "Персональный сайт-портфолио"
+baseurl: ""
+url: ""
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: "translations"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
